@@ -15,8 +15,7 @@ title: Automatically categorizing Sinhala news items from selected news sources
 
 [comment]: # "This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)"
 
-![Sample Image](./images/sample.png)
-
+![Overview](./images/overview.png)
 
 ## Team
 -  E/18/077, Dharmarathna N.S., [email](mailto:e18077@eng.pdn.ac.lk)
@@ -81,7 +80,7 @@ User Stories/Use Case Scenarios:
 * When a news reader wants to view news items in a specific category.
 
 ## Solution Architecture
-
+![Solution Architecture](./images/solarchitecture.png)
 
 ## Tools and Technologies
 For natural language processing and machine learning
@@ -96,7 +95,7 @@ Web application development
 
 ## Plan of Work
 Outline
-
+![Outline](./images/outline.png)
 
 Considerations for extendability
 * Addition of new categories and sources in the future.
