@@ -13,7 +13,7 @@ title: Automatically categorizing Sinhala news items from selected news sources
 
 ---
 
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
+[comment]: # "This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)"
 
 ![Sample Image](./images/sample.png)
 
@@ -25,32 +25,90 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Other Sub Topics](#other-sub-topics)
-3. [Links](#links)
+2. [Problem](#problem)
+3. [Aim](#aim)
+4. [Objectives](#objectives)
+5. [Proposed solution](#proposedsolution)
+6. [Solution Architecture](#solutionarchitecture)
+7. [Tools and Technologies](#toolsandtechnologies)
+8. [Plan of Work](#planofwork)
+9. [Links](#links)
 
 ---
 
 ## Introduction
+* In the modern world, with the abundance of information available on the internet, it has become challenging to filter out relevant information from a vast amount of data.
+* Sinhala is the primary language spoken in Sri Lanka, and many online news
+sources publish news articles in Sinhala.
+* With the increasing demand for relevant news, it is necessary to categorize the
+Sinhala news items from different news sources automatically.
+* Automated text classification is a great option for this. It is the process of using machine learning algorithms and natural language processing techniques to
+automatically categorize text documents into predefined categories or classes.
 
-The "Automatically Categorizing Sinhala News Items from Selected News Sources" repository tackles the real-world problem of efficiently categorizing Sinhala news articles sourced from diverse news outlets. With the exponential growth of digital content, manually categorizing news items has become a time-consuming and resource-intensive task. This project aims to automate this process using machine learning and natural language processing techniques specifically tailored for the Sinhala language.
+## Problem
+The primary problem addressed by this project is the lack of tools available for
+automatically categorizing Sinhala news articles. This creates a challenge for readers to find relevant articles quickly and for news organizations to effectively manage their content.
 
-Problem:
-Categorizing Sinhala news items manually is a challenging and laborious task due to the complexities of the Sinhala language. Its unique grammar, limited availability of linguistic resources, and the vast amount of news articles published daily make it impractical for humans to handle the categorization process effectively. This results in significant delays and potential inaccuracies in providing timely and relevant information to users.
+## Aim
+The aim of this project is to develop an automated system that categorizes Sinhala
+news items based on their content to make it easier for readers to find relevant
+articles quickly and for news organizations to effectively manage their content.
 
-Solution:
-The solution offered by this repository is an automated system that can accurately categorize Sinhala news items from a curated selection of news sources. By leveraging machine learning algorithms and NLP techniques, the system can learn patterns, linguistic features, and contextual cues to classify news articles into relevant categories. It streamlines the categorization process, saving time and effort for news organizations, researchers, and readers who rely on categorization for information retrieval and analysis.
+## Objectives
+* To collect a dataset of Sinhala news articles from selected news sources.
+* To preprocess and clean the data to prepare it for analysis.
+* To develop a machine learning model that can accurately categorize news articles.
+* To evaluate the performance of the model using various metrics.
+* To deploy the model as a web application to make it accessible to users.
 
-Impact:
-The impact of automating the categorization of Sinhala news items is significant. It enables news organizations to process and deliver news content more efficiently, enhancing their ability to provide up-to-date and well-organized information to their readers. Researchers and analysts can benefit from streamlined access to categorized news data, accelerating their investigations and studies. Moreover, the general public gains easier access to relevant news articles, enabling them to stay informed about various topics of interest without manual effort.
+## Proposed solution
+* The proposed solution is to use machine learning algorithms to categorize Sinhalanews items.
+* The system will be trained using a dataset of manually categorized Sinhala news items.
+* The system will use natural language processing techniques to extract the relevant features from the news items
+* Use machine learning algorithms to categorize the news items.
 
-By addressing the challenges of categorizing Sinhala news items automatically, this project empowers various stakeholders in the Sinhala language community, fostering better information dissemination, knowledge sharing, and analysis of news content.
+Impact/Business Value:
+* Reduce the time and resources spent on categorization process
+* Improve consistency of categorization process
 
-## Other Sub Topics
+Success Measurements:
+* Accuracy of the model on test dataset
+* Reduction in time and resources spent on categorization process
 
-.....
+User Stories/Use Case Scenarios:
+* Journalists can use the tool to categorize news items quickly and accurately
+* News agencies can use the tool to automate their categorization process and save resources
+* When a news reader wants to view news items in a specific category.
+
+## Solution Architecture
+
+
+## Tools and Technologies
+For natural language processing and machine learning
+1. LTK (Natural Language Toolkit)
+2. Scikit-learn:
+3. Pandas:
+4. Numpy:
+5. PyTorch:
+
+Web application development
+1. MERN stack
+
+## Plan of Work
+Outline
+
+
+Considerations for extendability
+* Addition of new categories and sources in the future.
+* The model can be extended to other languages
+* The tool can be integrated with other news platforms
+* Developing a mobile based application
+
+Team, Strengths, and Expertise:
+* Machine learning,natural language processing, web development.
+* Our team has experience working with Python programming, machine learning and web development.
 
 ## Links
-
 - [Project Repository](https://github.com/cepdnaclk/e18-6sp-Automatically-categorizing-Sinhala-news-items-from-selected-news-sources)
 - [Project Page](https://cepdnaclk.github.io/e18-6sp-Automatically-categorizing-Sinhala-news-items-from-selected-news-sources)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
