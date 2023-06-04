@@ -1,5 +1,5 @@
 ___
-# DELETE THIS INSTRUCTIONS AND ADD A SHORT INTRODUCTION ABOUT YOUR PROJECT
+# Automatically categorizing Sinhala news items from selected news sources
 ___
 
 ## Please refer the instructions in below URL:
