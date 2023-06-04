@@ -95,6 +95,7 @@ Web application development
 
 ## Plan of Work
 Outline
+
 ![Outline](./images/outline.png)
 
 Considerations for extendability
