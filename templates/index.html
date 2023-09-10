@@ -11,43 +11,45 @@
 
     <div class="split left">
         <div class="centered">
-            <h2>Automatically Categorizing Sinhala News Items</h2>
-            <img src="../static/img/overview.png" alt="">
+            <h1>Automatically Categorizing Sinhala <br> News Items</h1>
+            <img src="../static/img/overview.png" alt="" style="width: 750px">
         </div>
     </div>
 
 
     <div class="split right">
-        <div class="container mt-5 mb-5">
-            <div class="d-flex justify-content-center row">
-                <div class="d-flex flex-column col-md-8">
-                    <div>
-                        <label for="">International News : {{ data.positive }}</label>
-                    </div>
-                    <div>
-                        <label for="">Business News : {{ data.negative }}</label>
-                    </div>
-                    <div>
-                        <label for="">Sport News : {{ data.negative }}</label>
-                    </div>
-                    <div>
-                        <form method="post">
-                          <textarea name="text"></textarea>
-                          <input type="submit">
-                        </form>
-                    </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+            <div class="container mt-5 mb-5">
+                <div class="d-flex justify-content-center row">
+                    <div class="d-flex flex-column col-md-8">
+                        <div>
+                            <label for="" style="font-size: 22px;">International News : {{ data.positive }}</label>
+                        </div>
+                        <div>
+                            <label for="" style="font-size: 22px;">Business News : {{ data.negative }}</label>
+                        </div>
+                        <div>
+                            <label for="" style="font-size: 22px;">Sport News : {{ data.negative }}</label>
+                        </div>
+                        <div>
+                            <form method="post">
+                            <textarea name="text"></textarea>
+                            <input type="submit">
+                            </form>
+                        </div>
 
-                    <div class="coment-bottom bg-white p-2 px-4">
-                        {% for review in data.reviews %}
-                        <hr/>
-                          <div
-                              class="commented-section mt-2">
-                              <div class="d-flex flex-row align-items-center commented-user">
-                                  </div>
-                                  <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
-                                  <hr/>
-                        {% endfor %}
-                      </div>
+                        <div class="coment-bottom bg-white p-2 px-4">
+                            {% for review in data.reviews %}
+                            <hr/>
+                            <div
+                                class="commented-section mt-2">
+                                <div class="d-flex flex-row align-items-center commented-user">
+                                    </div>
+                                    <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
+                                    <hr/>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
