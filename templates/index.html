@@ -23,13 +23,13 @@
                 <div class="d-flex justify-content-center row">
                     <div class="d-flex flex-column col-md-8">
                         <div>
-                            <label for="" style="font-size: 22px;">International News : {{ data.positive }}</label>
+                            <label for="" style="font-size: 22px;">International News : {{ data.international }}</label>
                         </div>
                         <div>
-                            <label for="" style="font-size: 22px;">Business News : {{ data.negative }}</label>
+                            <label for="" style="font-size: 22px;">Business News : {{ data.business }}</label>
                         </div>
                         <div>
-                            <label for="" style="font-size: 22px;">Sport News : {{ data.negative }}</label>
+                            <label for="" style="font-size: 22px;">Sport News : {{ data.sports }}</label>
                         </div>
                         <div>
                             <form method="post">
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="coment-bottom bg-white p-2 px-4">
-                            {% for review in data.reviews %}
+                            {% for review in data.news %}
                             <hr/>
                             <div
                                 class="commented-section mt-2">

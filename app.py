@@ -3,10 +3,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 data = dict()
-news = ['Good', 'bad', 'like']
-international = 2
-business = 1
-sports = 1
+news = ['international', 'business', 'sports']
+international = 1
+business = 2
+sports = 3
 
 @app.route("/")
 def index():
