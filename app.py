@@ -3,15 +3,18 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 data = dict()
-reviews = ['Good', 'bad', 'like']
-positive = 2
-negative = 1
+news = ['Good', 'bad', 'like']
+international = 2
+business = 1
+sports = 1
 
 @app.route("/")
 def index():
-    data['reviews'] = reviews
-    data['positive'] = positive
-    data['negative'] = negative
+    data['news'] = news
+    data['international'] = international
+    data['business'] = business
+    data['sports'] = sports
+
     return render_template('index.html', data=data)
 
 if __name__ == "__main__":
