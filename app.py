@@ -17,7 +17,7 @@ def index():
     data['sports'] = sports
     return render_template('index.html', data=data)
 
-@app.route("/", methods = ['posts'])
+@app.route("/", methods = ['post'])
 def my_post():
     text = request.form['text']
     preprocessed_txt = preprocessing(text)
