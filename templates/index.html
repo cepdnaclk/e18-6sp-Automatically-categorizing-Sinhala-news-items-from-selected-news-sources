@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"></Link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>App</title> 
+</head>
+<body>
+
+    <div class="split left">
+        <div class="centered">
+            <h1>Automatically Categorizing Sinhala <br> News Items</h1>
+            <img src="../static/img/overview.png" alt="" style="width: 750px">
+        </div>
+    </div>
+
+
+    <div class="split right">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+            <div class="container mt-5 mb-5">
+                <div class="d-flex justify-content-center row">
+                    <div class="d-flex flex-column col-md-8">
+                        <div>
+                            <label for="" style="font-size: 22px;">International News : {{ data.international }}</label>
+                        </div>
+                        <div>
+                            <label for="" style="font-size: 22px;">Business News : {{ data.business }}</label>
+                        </div>
+                        <div>
+                            <label for="" style="font-size: 22px;">Sport News : {{ data.sports }}</label>
+                        </div>
+                        <div>
+                            <form method="post">
+                            <textarea name="text"></textarea>
+                            <input type="submit">
+                            </form>
+                        </div>
+
+                        <div class="coment-bottom bg-white p-2 px-4">
+                            {% for review in data.news %}
+                            <hr/>
+                            <div
+                                class="commented-section mt-2">
+                                <div class="d-flex flex-row align-items-center commented-user">
+                                    </div>
+                                    <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
+                                    <hr/>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
