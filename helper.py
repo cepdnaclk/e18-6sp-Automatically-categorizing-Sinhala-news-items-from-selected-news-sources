@@ -17,7 +17,7 @@ with open('static/model/corpora/stopwords/sinhala', 'r', encoding='utf-8') as fi
 
 #load tokens
 vocab = pd.read_csv('static/model/vocabulary.txt', header=None)
-tokens = vocab[0].tolist()
+tokens = vocab[0].tolist() 
 
 def remove_punctuations(text):
     for punctuation in string.punctuation:
