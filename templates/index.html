@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    <header>
+        <h1>Automatically Categorizing Sinhala News Items</h1>
+    </header>
+
     <div class="split left">
         <div class="centered">
             <h2>Automatically Categorizing Sinhala <br> News Items</h2>
@@ -21,28 +25,29 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
             <div class="container mt-5 mb-5">
                 <div class="d-flex justify-content-center row">
-                    <div class="d-flex flex-column col-md-8">
-                        <div>
-                            <label for="">International News : {{ data.international }}</label>
+                    <div class="d-flex flex-column col-md-8 ">
+                        <div class="text-area">
+                            <div>
+                                <label for="">International News : {{ data.international }}</label>
+                            </div>
+                            <div>
+                                <label for="">Business News : {{ data.business }}</label>
+                            </div>
+                            <div>
+                                <label for="">Sport News : {{ data.sports }}</label>
+                            </div>
+                            <div>
+                                <form method="post">
+                                <textarea placeholder="Enter your news here..." rows="4" cols="50" name="text"></textarea>
+                                <select name="category">
+                                    <option value="International">International</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Sports">Sports</option>
+                                </select>
+                                <input type="submit" >
+                                </form>
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Business News : {{ data.business }}</label>
-                        </div>
-                        <div>
-                            <label for="">Sport News : {{ data.sports }}</label>
-                        </div>
-                        <div>
-                            <form method="post">
-                            <textarea name="text"></textarea>
-                            <select name="category">
-                                <option value="International">International</option>
-                                <option value="Business">Business</option>
-                                <option value="Sports">Sports</option>
-                            </select>
-                            <input type="submit">
-                            </form>
-                        </div>
-
                         <div class="coment-bottom bg-white p-2 px-4">
                             {% for review in data.displayTexts %}
                                 {% if loop.index <= 3 %}

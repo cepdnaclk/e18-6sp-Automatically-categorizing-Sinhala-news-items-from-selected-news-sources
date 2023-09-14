@@ -20,6 +20,12 @@
   right: 0;
 }
 
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
 
 .centered {
   position: absolute;
@@ -34,8 +40,25 @@
 }
 
 
+.comments {
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+.text-area {
+  background-color: #f7f7f7;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
 textarea {
   width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
   height: 100px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -46,8 +69,16 @@ textarea {
   resize: none;
 }
 
-.comments {
-  text-decoration: underline;
-  text-underline-position: under;
+select, input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+select {
+  margin-top: 20px;
 }
