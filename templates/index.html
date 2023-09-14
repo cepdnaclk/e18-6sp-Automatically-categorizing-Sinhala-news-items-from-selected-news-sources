@@ -42,7 +42,7 @@
                                 <select name="category">
                                     <option value="International">International</option>
                                     <option value="Business">Business</option>
-                                    <option value="Sports">Sports</option>
+                                    <option value="Sport">Sport</option>
                                 </select>
                                 <input type="submit" >
                                 </form>
@@ -71,7 +71,9 @@
     <script>
         document.getElementById("moreDetailsButton").addEventListener("click", function() {
             // Redirect to another page
-            window.location.href = "moreDetails.html";
+            var currentURL = window.location.href;
+            var modifiedURL = currentURL + "/moredetails";
+            window.location.href = modifiedURL;
         });
     </script>
 

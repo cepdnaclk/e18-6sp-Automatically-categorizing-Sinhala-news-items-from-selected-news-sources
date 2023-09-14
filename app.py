@@ -8,6 +8,7 @@ logging.info('...Flask server started...')
 
 data = dict()
 news = []
+actualCategory = []
 actualInternational = 0
 actualBusiness = 0
 actualSports = 0
@@ -24,6 +25,7 @@ def index():
     data['news'] = news
     data['predictions'] = predictions
     data['displayTexts'] = displayTexts
+    data['actualCategory'] = actualCategory
     data['international'] = international
     data['business'] = business
     data['sports'] = sports
@@ -77,12 +79,17 @@ def my_post():
     finalText = first_five_words + " = " + prediction
 
     news.insert(0, text)
+    actualCategory.insert(0,category)
     displayTexts.insert(0, finalText)
     predictions.insert(0, prediction)
     return redirect(request.url)
 
-# @app.route('/', methods=['GET'])
-# def get_pred
+@app.route('/moredetails')
+def get_moreDetails():
+    logging.info('...Open More Details Page...')
+    return render_template('moreDetails.html', data=data)
+
+
 
 if __name__ == "__main__":
     app.run()
