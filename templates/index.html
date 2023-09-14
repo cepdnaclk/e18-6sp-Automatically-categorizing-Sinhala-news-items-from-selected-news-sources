@@ -50,12 +50,20 @@
                                     </div>
                                 {% endif %}
                             {% endfor %}
-                        </div>                        
+                        </div> 
+                        <button class="btn btn-primary" id="moreDetailsButton">More Details</button>                       
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("moreDetailsButton").addEventListener("click", function() {
+            // Redirect to another page
+            window.location.href = "moreDetails.html";
+        });
+    </script>
 
 </body>
 </html>
