@@ -2,3 +2,43 @@
 2023-09-14 12:54:32,596 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2023-09-14 12:54:32,599 - INFO - [33mPress CTRL+C to quit[0m
+2023-09-14 12:54:35,376 - INFO - ...Open Home Page...
+2023-09-14 12:54:35,430 - INFO - 127.0.0.1 - - [14/Sep/2023 12:54:35] "GET / HTTP/1.1" 200 -
+2023-09-14 12:54:35,573 - INFO - 127.0.0.1 - - [14/Sep/2023 12:54:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:54:35,625 - INFO - 127.0.0.1 - - [14/Sep/2023 12:54:35] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:54:38,121 - INFO - 127.0.0.1 - - [14/Sep/2023 12:54:38] "[33mGET /moreDetails.html HTTP/1.1[0m" 404 -
+2023-09-14 12:56:19,764 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-14 12:56:19,766 - INFO - Prediction : Business
+2023-09-14 12:56:19,766 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:19] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-14 12:56:19,774 - INFO - ...Open Home Page...
+2023-09-14 12:56:19,774 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:19] "GET / HTTP/1.1" 200 -
+2023-09-14 12:56:19,830 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:56:19,838 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:19] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:56:25,303 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-14 12:56:25,308 - INFO - Prediction : International
+2023-09-14 12:56:25,309 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-14 12:56:25,330 - INFO - ...Open Home Page...
+2023-09-14 12:56:25,336 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:25] "GET / HTTP/1.1" 200 -
+2023-09-14 12:56:25,360 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:56:25,368 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:25] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:56:33,677 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-14 12:56:33,677 - INFO - Prediction : Business
+2023-09-14 12:56:33,680 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-14 12:56:33,694 - INFO - ...Open Home Page...
+2023-09-14 12:56:33,696 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:33] "GET / HTTP/1.1" 200 -
+2023-09-14 12:56:33,735 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:56:33,735 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:33] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:56:43,212 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-14 12:56:43,212 - INFO - Prediction : Business
+2023-09-14 12:56:43,215 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-14 12:56:43,223 - INFO - ...Open Home Page...
+2023-09-14 12:56:43,231 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:43] "GET / HTTP/1.1" 200 -
+2023-09-14 12:56:43,265 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:56:43,266 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:43] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:56:46,763 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-14 12:56:46,776 - INFO - ...Open Home Page...
+2023-09-14 12:56:46,776 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:46] "GET / HTTP/1.1" 200 -
+2023-09-14 12:56:46,796 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-14 12:56:46,805 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:46] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-14 12:56:53,972 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:53] "[33mGET /moreDetails.html HTTP/1.1[0m" 404 -
+2023-09-14 12:56:55,574 - INFO - 127.0.0.1 - - [14/Sep/2023 12:56:55] "[33mGET /moreDetails.html HTTP/1.1[0m" 404 -
