@@ -39,17 +39,18 @@
                         </div>
 
                         <div class="coment-bottom bg-white p-2 px-4">
-                            {% for review in data.news %}
-                            <hr/>
-                            <div
-                                class="commented-section mt-2">
-                                <div class="d-flex flex-row align-items-center commented-user">
-                                    </div>
-                                    <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
+                            {% for review in data.displayTexts %}
+                                {% if loop.index <= 3 %}
                                     <hr/>
+                                    <div class="commented-section mt-2">
+                                        <div class="d-flex flex-row align-items-center commented-user">
+                                        </div>
+                                        <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
+                                        <hr/>
+                                    </div>
+                                {% endif %}
                             {% endfor %}
-                            </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
