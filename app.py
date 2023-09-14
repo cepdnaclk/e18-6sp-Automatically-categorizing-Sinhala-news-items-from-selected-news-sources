@@ -8,6 +8,9 @@ logging.info('...Flask server started...')
 
 data = dict()
 news = []
+actualInternational = 0
+actualBusiness = 0
+actualSports = 0
 predictions = []
 displayTexts = []
 international = 0
@@ -24,13 +27,18 @@ def index():
     data['international'] = international
     data['business'] = business
     data['sports'] = sports
+    data['actualInternational'] = actualInternational
+    data['actualBusiness'] = actualBusiness
+    data['actualSports'] = actualSports
     logging.info('...Open Home Page...')
     return render_template('index.html', data=data)
 
 @app.route("/", methods = ['post'])
 def my_post():
     text = request.form['text']
-    if text =="":
+    category = request.form['category']
+
+    if text =="" or category=="":
         return redirect(request.url)
     
     logging.info(f'Text : {text}')
@@ -43,6 +51,16 @@ def my_post():
 
     prediction = get_prediction(vectorized_txt)
     logging.info(f'Prediction : {prediction}')
+
+    if category == 'International':
+        global actualInternational
+        actualInternational += 1
+    elif category == 'Business':
+        global actualBusiness
+        actualBusiness += 1
+    else:
+        global actualSports
+        actualSports += 1
 
     if prediction == 'International':
         global international
