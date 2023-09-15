@@ -1,0 +1,70 @@
+2023-09-15 18:26:54,658 - INFO - ...Flask server started...
+2023-09-15 18:26:54,684 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-15 18:26:54,685 - INFO - [33mPress CTRL+C to quit[0m
+2023-09-15 18:26:57,066 - INFO - ...Open Home Page...
+2023-09-15 18:26:57,087 - INFO - 127.0.0.1 - - [15/Sep/2023 18:26:57] "GET / HTTP/1.1" 200 -
+2023-09-15 18:26:57,226 - INFO - 127.0.0.1 - - [15/Sep/2023 18:26:57] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-09-15 18:26:57,249 - INFO - 127.0.0.1 - - [15/Sep/2023 18:26:57] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:06,344 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-15 18:27:06,344 - INFO - Prediction : International
+2023-09-15 18:27:06,347 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:06] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-15 18:27:06,355 - INFO - ...Open Home Page...
+2023-09-15 18:27:06,357 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:06] "GET / HTTP/1.1" 200 -
+2023-09-15 18:27:06,388 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:27:06,429 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:06] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:11,458 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:11] "[35m[1mGET /clear_message HTTP/1.1[0m" 204 -
+2023-09-15 18:27:15,673 - INFO - Vectorized Text : [[0. 0. 1. ... 0. 0. 0.]]
+2023-09-15 18:27:15,679 - INFO - Prediction : Sport
+2023-09-15 18:27:15,680 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-15 18:27:15,682 - INFO - ...Open Home Page...
+2023-09-15 18:27:15,682 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:15] "GET / HTTP/1.1" 200 -
+2023-09-15 18:27:15,728 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:27:15,733 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:15] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:20,761 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:20] "[35m[1mGET /clear_message HTTP/1.1[0m" 204 -
+2023-09-15 18:27:21,923 - INFO - Vectorized Text : [[0. 0. 1. ... 0. 0. 0.]]
+2023-09-15 18:27:21,924 - INFO - Prediction : Sport
+2023-09-15 18:27:21,924 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-15 18:27:21,928 - INFO - ...Open Home Page...
+2023-09-15 18:27:21,932 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:21] "GET / HTTP/1.1" 200 -
+2023-09-15 18:27:21,963 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:27:21,969 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:21] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:26,990 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:26] "[35m[1mGET /clear_message HTTP/1.1[0m" 204 -
+2023-09-15 18:27:30,649 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-15 18:27:30,649 - INFO - Prediction : Business
+2023-09-15 18:27:30,649 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-15 18:27:30,657 - INFO - ...Open Home Page...
+2023-09-15 18:27:30,661 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:30] "GET / HTTP/1.1" 200 -
+2023-09-15 18:27:30,692 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:27:30,694 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:30] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:35,714 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:35] "[35m[1mGET /clear_message HTTP/1.1[0m" 204 -
+2023-09-15 18:27:42,942 - INFO - Vectorized Text : [[0. 0. 0. ... 0. 0. 0.]]
+2023-09-15 18:27:42,942 - INFO - Prediction : Business
+2023-09-15 18:27:42,945 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-09-15 18:27:42,948 - INFO - ...Open Home Page...
+2023-09-15 18:27:42,948 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:42] "GET / HTTP/1.1" 200 -
+2023-09-15 18:27:42,988 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:27:42,988 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:42] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:27:44,273 - INFO - ...Open More Details Page...
+2023-09-15 18:27:44,279 - INFO - 127.0.0.1 - - [15/Sep/2023 18:27:44] "GET /moredetails HTTP/1.1" 200 -
+2023-09-15 18:28:00,816 - INFO - ...Open Home Page...
+2023-09-15 18:28:00,816 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:00] "GET / HTTP/1.1" 200 -
+2023-09-15 18:28:00,848 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:28:00,852 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:00] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:28:06,813 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:06] "[35m[1mGET /clear_message HTTP/1.1[0m" 204 -
+2023-09-15 18:28:08,713 - INFO - ...Open Home Page...
+2023-09-15 18:28:08,714 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:08] "GET / HTTP/1.1" 200 -
+2023-09-15 18:28:08,734 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:28:08,744 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:08] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:28:09,339 - INFO - ...Open Home Page...
+2023-09-15 18:28:09,341 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "GET / HTTP/1.1" 200 -
+2023-09-15 18:28:09,368 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:28:09,371 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:28:09,609 - INFO - ...Open Home Page...
+2023-09-15 18:28:09,609 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "GET / HTTP/1.1" 200 -
+2023-09-15 18:28:09,937 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-09-15 18:28:09,944 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:09] "[36mGET /static/img/overview.png HTTP/1.1[0m" 304 -
+2023-09-15 18:28:20,237 - INFO - ...Open More Details Page...
+2023-09-15 18:28:20,237 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:20] "GET /moredetails HTTP/1.1" 200 -
+2023-09-15 18:28:23,525 - INFO - ...Open More Details Page...
+2023-09-15 18:28:23,526 - INFO - 127.0.0.1 - - [15/Sep/2023 18:28:23] "GET /moredetails HTTP/1.1" 200 -
