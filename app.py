@@ -11,6 +11,9 @@ news = []
 message = ""
 actualCategory = []
 actualInternational = 0
+totalNews = 0
+accuracy = 0
+accuracyPcntg = 0
 actualBusiness = 0
 actualSports = 0
 predictions = []
@@ -25,6 +28,7 @@ sports = 0
 def index():
     data['news'] = news
     data['predictions'] = predictions
+    data['accuracyPcntg'] = accuracyPcntg
     data['displayTexts'] = displayTexts
     data['actualCategory'] = actualCategory
     data['international'] = international
@@ -55,6 +59,9 @@ def my_post():
     prediction = get_prediction(vectorized_txt)
     logging.info(f'Prediction : {prediction}')
 
+    global totalNews
+    totalNews += 1
+
     if category == 'International':
         global actualInternational
         actualInternational += 1
@@ -66,6 +73,8 @@ def my_post():
         actualSports += 1
 
     if prediction == category:
+        global accuracy
+        accuracy += 1
         global message
         if prediction == "International":
             message = "This is an " + prediction + " news. Predicted Correctly." 
@@ -87,7 +96,8 @@ def my_post():
     else:
         global business
         business += 1
-    
+    global accuracyPcntg
+    accuracyPcntg = round((accuracy/totalNews)*100)
     splitText = text.split()
     first_five_words = ' '.join(splitText[:5])
     finalText = first_five_words + " = " + prediction
