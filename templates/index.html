@@ -78,6 +78,14 @@
             var currentURL = window.location.href;
             var modifiedURL = currentURL + "/moredetails";
             window.location.href = modifiedURL;
+            fetch("/clear_message", { method: "GET" })
+                .then(function(response) {
+                    if (response.status === 204) {
+                    console.log("Message cleared successfully.");
+                    } else {
+                    console.error("Failed to clear message.");
+                    }
+                })
         });
 
         
@@ -89,7 +97,14 @@
             setTimeout(function () {
                 popup.style.display = 'none';
                 // Clear the message after displaying the popup
-                fetch('/clear_message')
+                fetch("/clear_message", { method: "GET" })
+                .then(function(response) {
+                    if (response.status === 204) {
+                    console.log("Message cleared successfully.");
+                    } else {
+                    console.error("Failed to clear message.");
+                    }
+                })
             }, 5000); // Hide after 5 seconds (5000 milliseconds)
         }
 

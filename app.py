@@ -25,7 +25,6 @@ sports = 0
 def index():
     data['news'] = news
     data['predictions'] = predictions
-    data['message'] = message
     data['displayTexts'] = displayTexts
     data['actualCategory'] = actualCategory
     data['international'] = international
@@ -68,9 +67,16 @@ def my_post():
 
     if prediction == category:
         global message
-        message = "Predicted Correctly"
+        if prediction == "International":
+            message = "This is an " + prediction + " news. Predicted Correctly." 
+        else:
+            message = "This is a " + prediction + " news. Predicted Correctly." 
     else:
-        message = "Unsuccessful Prediction"
+        if prediction == "International":
+            message = "This is a " + prediction + " news. Unsuccessful Prediction"
+        else:
+            message = "This is a " + prediction + " news. Unsuccessful Prediction"
+        
 
     if prediction == 'International':
         global international
@@ -94,6 +100,7 @@ def my_post():
 
 @app.route('/moredetails')
 def get_moreDetails():
+    message = ""
     logging.info('...Open More Details Page...')
     return render_template('moreDetails.html', data=data)
 
