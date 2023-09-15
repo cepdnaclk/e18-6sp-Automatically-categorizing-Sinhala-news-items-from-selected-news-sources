@@ -68,6 +68,10 @@
         </div>
     </div>
 
+    <div id="popup" class="popup-message"></div>
+
+    
+
     <script>
         document.getElementById("moreDetailsButton").addEventListener("click", function() {
             // Redirect to another page
@@ -75,6 +79,25 @@
             var modifiedURL = currentURL + "/moredetails";
             window.location.href = modifiedURL;
         });
+
+        
+        function showMessage(message) {
+            const popup = document.getElementById('popup');
+            popup.textContent = message;
+            popup.style.display = 'block';
+
+            setTimeout(function () {
+                popup.style.display = 'none';
+                // Clear the message after displaying the popup
+                fetch('/clear_message')
+            }, 5000); // Hide after 5 seconds (5000 milliseconds)
+        }
+
+        {% if message %}
+            showMessage("{{ message }}");
+        {% endif %}
+
+
     </script>
 
 </body>

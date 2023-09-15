@@ -8,6 +8,7 @@ logging.info('...Flask server started...')
 
 data = dict()
 news = []
+message = ""
 actualCategory = []
 actualInternational = 0
 actualBusiness = 0
@@ -24,6 +25,7 @@ sports = 0
 def index():
     data['news'] = news
     data['predictions'] = predictions
+    data['message'] = message
     data['displayTexts'] = displayTexts
     data['actualCategory'] = actualCategory
     data['international'] = international
@@ -33,7 +35,7 @@ def index():
     data['actualBusiness'] = actualBusiness
     data['actualSports'] = actualSports
     logging.info('...Open Home Page...')
-    return render_template('index.html', data=data)
+    return render_template('index.html', data=data, message=message)
 
 @app.route("/", methods = ['post'])
 def my_post():
@@ -64,6 +66,12 @@ def my_post():
         global actualSports
         actualSports += 1
 
+    if prediction == category:
+        global message
+        message = "Predicted Correctly"
+    else:
+        message = "Unsuccessful Prediction"
+
     if prediction == 'International':
         global international
         international += 1
@@ -89,6 +97,11 @@ def get_moreDetails():
     logging.info('...Open More Details Page...')
     return render_template('moreDetails.html', data=data)
 
+@app.route('/clear_message')
+def clear_message():
+    global message
+    message = ""
+    return '', 204  # Return a response with no content
 
 
 if __name__ == "__main__":
