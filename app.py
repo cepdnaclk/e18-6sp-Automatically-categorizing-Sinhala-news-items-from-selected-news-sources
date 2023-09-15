@@ -91,12 +91,12 @@ def my_post():
     predictions.insert(0, prediction)
     return redirect(request.url)
 
-@app.route('moredetails')
+@app.route('/moredetails')
 def get_moreDetails():
     logging.info('...Open More Details Page...')
     return render_template('moreDetails.html', data=data)
 
-@app.route('clear_message')
+@app.route('/clear_message')
 def clear_message():
     global message
     message = ""
