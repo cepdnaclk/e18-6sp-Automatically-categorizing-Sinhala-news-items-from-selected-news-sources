@@ -24,7 +24,7 @@ sports = 0
 
 
 
-@app.route("/")
+@app.route("/", methods = ['get'])
 def index():
     data['news'] = news
     data['predictions'] = predictions

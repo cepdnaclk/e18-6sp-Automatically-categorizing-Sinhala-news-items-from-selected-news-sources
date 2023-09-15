@@ -48,7 +48,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="coment-bottom bg-white p-2 px-4">
+                        <div class="coment-bottom bg-white p-2 px-4 review-item">
                             {% for review in data.displayTexts %}
                                 {% if loop.index <= 3 %}
                                     <hr/>
@@ -73,6 +73,20 @@
     
 
     <script>
+        // Function to hide a review element after 10 seconds
+        function hideReview(reviewElement) {
+            setTimeout(function() {
+                reviewElement.style.display = 'none';
+            }, 10000); // 10 seconds in milliseconds
+        }
+
+        // Get all the review items and hide each one after 10 seconds
+        const reviewItems = document.querySelectorAll('.review-item');
+        reviewItems.forEach(function(reviewItem) {
+            hideReview(reviewItem);
+        });
+
+
         document.getElementById("moreDetailsButton").addEventListener("click", function() {
             // Redirect to another page
             var currentURL = window.location.href;
