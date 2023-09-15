@@ -24,7 +24,7 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 1px;
 }
 
 .centered {
@@ -84,7 +84,7 @@ select {
 }
 .popup-message {
   position: fixed;
-  top: 20px;
+  top: 70px;
   right: 20px;
   background-color: #333;
   color: #fff;
