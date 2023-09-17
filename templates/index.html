@@ -48,7 +48,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="coment-bottom bg-white p-2 px-4">
+                        <div class="coment-bottom bg-white p-2 px-4 review-item">
                             {% for review in data.displayTexts %}
                                 {% if loop.index <= 3 %}
                                     <hr/>
@@ -73,11 +73,33 @@
     
 
     <script>
+        // Function to hide a review element after 10 seconds
+        function hideReview(reviewElement) {
+            setTimeout(function() {
+                reviewElement.style.display = 'none';
+            }, 10000); // 10 seconds in milliseconds
+        }
+
+        // Get all the review items and hide each one after 10 seconds
+        const reviewItems = document.querySelectorAll('.review-item');
+        reviewItems.forEach(function(reviewItem) {
+            hideReview(reviewItem);
+        });
+
+
         document.getElementById("moreDetailsButton").addEventListener("click", function() {
             // Redirect to another page
             var currentURL = window.location.href;
             var modifiedURL = currentURL + "/moredetails";
             window.location.href = modifiedURL;
+            fetch("/clear_message", { method: "GET" })
+                .then(function(response) {
+                    if (response.status === 204) {
+                    console.log("Message cleared successfully.");
+                    } else {
+                    console.error("Failed to clear message.");
+                    }
+                })
         });
 
         
@@ -89,7 +111,14 @@
             setTimeout(function () {
                 popup.style.display = 'none';
                 // Clear the message after displaying the popup
-                fetch('/clear_message')
+                fetch("/clear_message", { method: "GET" })
+                .then(function(response) {
+                    if (response.status === 204) {
+                    console.log("Message cleared successfully.");
+                    } else {
+                    console.error("Failed to clear message.");
+                    }
+                })
             }, 5000); // Hide after 5 seconds (5000 milliseconds)
         }
 
